@@ -2,7 +2,7 @@
 
 Ecrire une fonction multiplyOddIndices, qui prend en entrée un tableau de nombres.
 * Chaque nombre situé à un index pair doit être renvoyé tel quel
-* Chaque nombre situé à un index impair doit être renvoyé multiplié par son index
+* Chaque nom  rbre situé à un index impair doit être renvoyé multiplié par son index
 
 Il va donc falloir utiliser le 2ème argument de la fonction passée à map.
 
@@ -13,6 +13,15 @@ Tableau renvoyé par multiplyOddIndices:
 */
 
 function multiplyOddIndices(numbers) {
+  const tableau = numbers;
+  return tableau.map((nb, poulet) => {
+    if (poulet % 2 !== 0) {
+      return nb * poulet;
+    }
+    else {
+      return nb
+    }
+  })
 }
 
 module.exports = multiplyOddIndices;
